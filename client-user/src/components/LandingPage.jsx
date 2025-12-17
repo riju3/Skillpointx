@@ -32,7 +32,7 @@
           <div>
             <img
               className="img-content"
-              src="https://opensource.com/sites/default/files/lead-images/browser_web_internet_website.png"
+              src="https://assets.entrepreneur.com/content/3x2/2000/20160307083915-shutterstock-185569136.jpeg"
               alt=""
             />
           </div>

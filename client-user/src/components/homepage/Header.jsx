@@ -43,10 +43,10 @@ function Header(){
 
                         <div className="right-header2">
                             
-                                <Link to="https://mail.google.com/mail/" target="_blank">
+                                {/* <Link to="https://mail.google.com/mail/" target="_blank">
                                     <i className="fa fa-envelope"></i>
                                     admin@skillpointx.co.in
-                                </Link>
+                                </Link> */}
                             
                             <br/>
                             <p>follow us on -</p>
@@ -66,7 +66,7 @@ function Header(){
                                 </Link>
                             
                             
-                                <Link to="https://www.youtube.com/" target="_blank">
+                                <Link to="https://youtube.com/@theminecrafters05?si=rJpc1vtlu3nSi9vb" target="_blank">
                                     <i className="fa fa-youtube-play"></i>
                                 </Link>
                             
@@ -98,33 +98,13 @@ function Header(){
                     </div>
 
                     <div className="right-navbar">
-
-                        <div className="right-navbar1">
-                            
-                                {/* <input type="search" placeholder="search here"/>
-                                    <i className="fa fa-search"></i> */}
-                                
-                            
-                        </div>
-
-                        <div className="right-navbar2">
-                            
-                                {/* <Link to="D:\html\AICT\website design\F\subpages\cart.html">
-                                    <i className="fa fa-shopping-cart fa-2x"></i>
-                                </Link> */}
-                                        
-                        </div>
-
-                        <div className="right-navbar3">
-                            
-                                    {/* <Link to="D:\html\AICT\website design\F\subpages\account.html">
-                                        <i className="fa fa-user fa-2x"></i>
-                                    </Link> */}
-                                
-                            
-                        </div>
-
-                            
+                       <a href="tel:+919000012345" className="nav-enquiry">
+                        📞 Have questions? Call us: +91 86535 3019
+                        </a>
+                        <a href="mailto:support@skillpointx.com" className="nav-email">
+                            ✉️ support@skillpointx.com
+                        </a>
+    
                     </div>
                 
                 </div>

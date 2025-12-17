@@ -97,7 +97,7 @@ export default function AppNavBar() {
         position="fixed"
         open={open}
         style={{
-          backgroundColor: "#101460",
+          background: "linear-gradient(90deg, #141e30, #39526fff)",
           height: "60px",
           width: "100%",
         }}

@@ -40,7 +40,6 @@ body{
 }
 .left-header1 img{
 	height: 9vh;
-	/*flex not required in image*/
 	align-items: center;
 	justify-content: center;
 }
@@ -51,11 +50,11 @@ body{
 	align-items: center;
 	justify-content: center;
 	color:  rgb(8, 0, 255);
-	text-shadow: 
+	/* text-shadow: 
 	-2px -2px 0px black,
 	 2px -2px 0px black,
 	-2px  2px 0px black,
-	 2px  2px 0px black; /* best outline/shadow effect*/
+	 2px  2px 0px black; best outline/shadow effect */
 
 }
 .right-header{
