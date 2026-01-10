@@ -7,8 +7,8 @@ function Header(){
     
                 <div className="notification">
                     <marquee >50% OFF on Fullstack Web Development   |   20% OFF on Cyber Security   |   30% OFF on Java Development   |   40% OFF on Python Programming   |   25% OFF on MERN Stack Mastery   |   35% OFF on Data Science & Machine Learning   |   50% OFF on Web Design UI/UX Courses   |   30% OFF on Cloud Computing & DevOps   |   45% OFF on Mobile App Development   |   20% OFF on Digital Marketing Professional Course   |   30% OFF on SQL & Database Engineering   |   40% OFF on C++ & DSA Masterclass   |   15% OFF on Ethical Hacking Essentials   |   50% OFF on Interview Preparation & Soft Skills Training
- </marquee>
-                    {/* Consider replacing <marquee> with a more accessible alternative in the future */}
+                    </marquee>
+                    
                 </div>
 
 
