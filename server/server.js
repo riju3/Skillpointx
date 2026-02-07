@@ -29,7 +29,7 @@ app.get('/', async (req, res) => {
             // Payment succeeded, update your database or perform other actions
             // You can use paymentIntent.payment_status or similar properties to update the status
             return res.json({ message: 'Payment Successful' })
-            // res.redirect("https://course-server-fquonrender.com/users/courses");
+            // res.redirect("http://localhost:3000/users/courses");
         } else {
             // Payment failed or other status, handle accordingly
             return res.status(404).json({ message: 'Payment failed' })

@@ -7,7 +7,7 @@ function UpdateCourse() {
   const [course, setCourse] = useState({});
 
   useEffect(() => {
-    fetch(`https://course-server-fquonrender.com/admin/courses/${courseId}`, {
+    fetch(`http://localhost:3000/admin/courses/${courseId}`, {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
       },

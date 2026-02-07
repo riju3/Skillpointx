@@ -17,7 +17,7 @@ const PaymentForm = () => {
     const paymentHandler = useCallback(async () => {
         try {
             // get the price first 
-            const res = await axios.get(`https://course-server-fquonrender.com/users/courses/${id}`, {
+            const res = await axios.get(`http://localhost:3000/users/courses/${id}`, {
                 headers: {
                     Authorization: "Bearer " + localStorage.getItem("token"),
                 }
@@ -27,7 +27,7 @@ const PaymentForm = () => {
             // next create the payment intent
             try {
                 const res2 = await axios
-                    .post("https://course-server-fquonrender.com/payment/create-payment-intent", {
+                    .post("http://localhost:3000/payment/create-payment-intent", {
                         course: { price: p }
                     }, {
                         headers: { "Content-Type": "application/json" }

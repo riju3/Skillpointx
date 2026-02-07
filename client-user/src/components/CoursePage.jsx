@@ -30,7 +30,7 @@ function CoursePage() {
 
   useEffect(() => {
     axios
-      .get(`https://course-server-fquonrender.com/users/courses/${id}`, {
+      .get(`http://localhost:3000/users/courses/${id}`, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
@@ -41,7 +41,7 @@ function CoursePage() {
       .catch((err) => console.log(err));
 
     axios
-      .get("https://course-server-fquonrender.com/users/purchasedCourses", {
+      .get("http://localhost:3000/users/purchasedCourses", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

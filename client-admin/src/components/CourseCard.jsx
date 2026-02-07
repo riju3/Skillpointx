@@ -21,7 +21,7 @@ function CourseCard(props) {
     const id = props.course._id;
     if (userInput === "DELETE") {
       axios
-        .delete(`https://course-server-fquonrender.com/admin/courses/${id}`, {
+        .delete(`http://localhost:3000/admin/courses/${id}`, {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
           },
