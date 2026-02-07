@@ -25,7 +25,7 @@ function RegisterPage() {
     } else {
       try {
         const response = await axios.post(
-          "http://localhost:3000/users/signup",
+          "https://course-server-fquonrender.com/users/signup",
           {
             username: user.email,
             password: user.password,

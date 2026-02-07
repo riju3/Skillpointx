@@ -22,7 +22,7 @@ function CreateCourse(props) {
   }, [props.course]);
 
   function createCourse() {
-    fetch("http://localhost:3000/admin/courses", {
+    fetch("https://course-server-fquonrender.com/admin/courses", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -49,7 +49,7 @@ function CreateCourse(props) {
       .catch((err) => console.log(err));
   }
   function updateCourse() {
-    fetch(`http://localhost:3000/admin/courses/${props.course._id}`, {
+    fetch(`https://course-server-fquonrender.com/admin/courses/${props.course._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

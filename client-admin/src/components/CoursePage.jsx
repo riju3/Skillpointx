@@ -30,7 +30,7 @@ function CoursePage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/users/courses/${id}`, {
+      .get(`https://course-server-fquonrender.com/users/courses/${id}`, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
@@ -41,7 +41,7 @@ function CoursePage() {
       .catch((err) => console.log(err));
 
     axios
-      .get("http://localhost:3000/users/purchasedCourses", {
+      .get("https://course-server-fquonrender.com/users/purchasedCourses", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
@@ -88,7 +88,7 @@ function CoursePage() {
               onClick={() => {
                 axios
                   .post(
-                    `http://localhost:3000/users/courses/${id}`,
+                    `https://course-server-fquonrender.com/users/courses/${id}`,
                     {},
                     {
                       headers: {

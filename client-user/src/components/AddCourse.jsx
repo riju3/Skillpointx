@@ -12,7 +12,7 @@ const AddCourse = () => {
         if (sendRequest.current) {
             sendRequest.current = false;
             try {
-                const res = await axios.post(`http://localhost:3000/users/courses/${id}`, {},
+                const res = await axios.post(`https://course-server-fquonrender.com/users/courses/${id}`, {},
                     {
                         headers: {
                             Authorization:

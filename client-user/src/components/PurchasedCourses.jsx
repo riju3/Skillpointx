@@ -15,7 +15,7 @@ function PurchasedCourses() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/users/purchasedCourses", {
+      .get("https://course-server-fquonrender.com/users/purchasedCourses", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

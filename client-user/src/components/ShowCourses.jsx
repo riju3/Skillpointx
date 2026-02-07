@@ -23,7 +23,7 @@ function ShowCourses() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/users/courses/", {
+      .get("https://course-server-fquonrender.com/users/courses/", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

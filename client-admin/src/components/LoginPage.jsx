@@ -24,7 +24,7 @@ function LoginPage() {
       return;
     } else {
       try {
-        const response = await axios.post("http://localhost:3000/admin/login", {
+        const response = await axios.post("https://course-server-fquonrender.com/admin/login", {
           username: admin.email,
           password: admin.password,
         });
