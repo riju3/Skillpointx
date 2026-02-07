@@ -4,6 +4,7 @@ const adminRouter = require("./routes/admin");
 const userRouter = require("./routes/user");
 const paymentRouter = require("./routes/payment");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const PORT = process.env.PORT || 3000;
 require("./database/connect");
 
 const app = express();
@@ -39,4 +40,4 @@ app.get('/', async (req, res) => {
         return res.status(500).json({ message: 'Payment failed' })
     }
 })
-app.listen(3000, () => console.log("Server running on port 3000"));
+app.listen(PORT, () => console.log("Server is running on port"+ PORT));
